@@ -8,6 +8,7 @@
 
 - [Idea](#idea)
 - [Progress so far](#progress_so_far)
+- [Demo/Working Model](#demo)
 - [How it works](#working)
 - [Built Using](#built_using)
 - [Sample Dashboard](#sample_dashboard)
@@ -46,6 +47,9 @@ The heath focussed features are as follows:-
 - So, rather, I have used dummy data and implemented the logic behind the pie chart for the productivity analysis.
 - Sleep cycles would need data from smartwatches which would need authorization from the manufacturers, so I have rather used dummy data
 
+## 🧢 Demo/Working Model <a name="demo"></a>
+
+The like to the deployed webapp-[personal-assistant](https://personal-assistant-muskanpa.netlify.app/)
 ## 💭 How it works <a name = "working"></a>
 
 - The TO-DO app uses state managament in REACT to retain the data for the tasks.
