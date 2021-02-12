@@ -31,7 +31,7 @@ The TO-DO app includes 3 features:-
 - clear task
 
 Under the EVENTS umbrella,the following features are included:-
-- Geting Google Calendar events and displaying them in the form of a table
+- Geting Google Calendar events and displaying them in the form of a table(includes permission to access your calendar as well)
 - Productivity Analysis- Using the starting and ending time of meetings in the whole day to show a pie chart indicating the proportion of meeting hours and productive hours(total working hours - meeting hours)
 
 The heath focussed features are as follows:-
@@ -43,13 +43,14 @@ The heath focussed features are as follows:-
 
 - The first umbrella which is the TO-DO app has been implemented successfully.
 - Under the events' umbrella, all the features have been implemented on the dashboard.
-- Integrating the app with Google API could not succeed due to authentication issues when sending a GET request to fetch the events, although the POST request works fine.
-- So, rather, I have used dummy data and implemented the logic behind the pie chart for the productivity analysis.
+- Google Calendar Api is used for authenticating the app as soon as one goes to the table dashboard so that the user can grant permission to the app to access their calendar events.
+- These events' details(meeting name,date,start time,end time and meeting link) are displayed on the dashboard in the form of a table.
+- I have used dummy data and implemented the logic behind the pie chart for the productivity analysis.
 - Sleep cycles would need data from smartwatches which would need authorization from the manufacturers, so I have rather used dummy data
 
 ## 🧢 Demo/Working Model <a name="demo"></a>
 
-The like to the deployed webapp-[personal-assistant](https://personal-assistant-muskanpa.netlify.app/)
+The link to the deployed webapp-[personal-assistant](https://personal-assistant-muskanpa.netlify.app/)
 ## 💭 How it works <a name = "working"></a>
 
 - The TO-DO app uses state managament in REACT to retain the data for the tasks.
@@ -78,7 +79,7 @@ This app has been built using the MERN stack and a little bit of Flux for the fr
 ![architecture](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Architecture.png)
 
 ## ⛏️ Debugging and Maintanence <a name="debugging_and_maintanence"></a>
-- The integration with Google Calendars API needs to be worked upon.
+- The data used in pie-chart is dummy data but given more time, the data fetched using the Google Calendar API can be used.
 
 ##   Performance and Scalability <a name="performance_and_scalability"></a>
 - The site works on all the web browsers.
