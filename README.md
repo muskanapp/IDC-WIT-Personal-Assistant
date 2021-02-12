@@ -81,7 +81,7 @@ This app has been built using the MERN stack and a little bit of Flux for the fr
 - The integration with Google Calendars API needs to be worked upon.
 
 ##   Performance and Scalability <a name="performance_and_scalability"></a>
-
+- The site works on all the web browsers.
 
 ## 🤓 Future Work
 - Notifications can be sent to the user reminding them of timely meals and breaks
