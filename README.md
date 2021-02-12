@@ -1,107 +1,97 @@
-<p align="center">
-<a href="https://designrevision.com/downloads/shards-dashboard-lite-react/">
-<img src="assets/preview.png" width="250" />
-</a>
-</p>
-
-<h1 align="center" style="border-bottom: none !important; margin-bottom: 5px !important;"><a href="https://designrevision.com/downloads/shards-dashboard-lite-react/">Shards Dashboard React</a></h1>
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" />
-  </a>
-  <a href="https://twitter.com/designrevision">
-    <img src="https://img.shields.io/twitter/follow/DesignRevision.svg?style=social&label=Follow" />
-  </a>
-</p>
+<h1 align="center">Personal Assistant for Busiest Professionals</h1>
 
 <p align="center">
-A free React admin dashboard template pack featuring a modern design system <br />  and lots of custom templates and components.
+  <img src="https://github.com/muskanapp/Personal-Assistant-for-busiest-professionals/blob/main/assets/download.png" />
 </p>
 
-<p align="center">
-  <a href="https://designrevision.com/demo/shards-dashboard-lite-react">
-    <img height="55px" src="assets/btn-live-preview.png" />
-  </a>
-  <a href="https://designrevision.com/downloads/shards-dashboard-lite-react">
-    <img height="55px" src="assets/btn-learn-more.png" />
-  </a>
-</p>
+## 📝 Table of Contents
 
-<br />
+- [Idea](#idea)
+- [Progress so far](#progress_so_far)
+- [How it works](#working)
+- [Built Using](#built_using)
+- [Sample Dashboard](#sample_dashboard)
+- [Architecture Design](#architecture_design)
+- [Demo / Working](#demo)
+- [Debugging and Maintanence](#debugging_and_maintanence)
+- [Performance and Scalability](#performance_and_scalability)
+- [Future work](#future_work)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-<p align="center">
-<a href="https://designrevision.com/downloads/shards-dashboard-lite-react">
-<img src="assets/demo-preview.gif" width="650" />
-</a>
-</p>
+## 🧐 Idea <a name = "Idea"></a>
 
-<br />
+This project focuses on implementing features that would make the life of the busiest working professionals easy in today's tech-savy world.
+The whole project can be mainly divided under 3 umbrellas :- events, a to-do app and health focused features
 
-> ✨ **Note:** You can download the Sketch files from the official product page.
+The TO-DO app includes 3 features:-
+- add task
+- edit task
+- clear task
 
-<br />
+Under the EVENTS umbrella,the following features are included:-
+- Geting Google Calendar events and displaying them in the form of a table
+- Productivity Analysis- Using the starting and ending time of meetings in the whole day to show a pie chart indicating the proportion of meeting hours and productive hours(total working hours - meeting hours)
 
-### Quick Start
-
-* Install dependencies by running `yarn` or `npm install`.
-* Run `yarn start` or `npm run start` to start the local development server.
-* 😎 **That's it!** You're ready to start building awesome dashboards.
-
-<br />
-
-### Project Structure
-
-- This project is bootstrapped using [Create React App](https://github.com/facebook/create-react-app).
-- **Flux** is used for state management and all Flux specific files are located inside `src/flux`. Transitioning to a more robust solution such as Redux is also fairly simple.
-- All primary templates are located inside `src/views`.
-- There is only one single layout defined (Default) inside `src/layouts`, however, the current structure provides an easy way of extending the UI kit. 
-- The `src/components` directory hosts all template-specific subcomponents in their own subdirectory.
-- The layout styles inherited from Shards Dashboard are pulled in from the `src/shards-dashboard` submodule inside `src/App.js`.
-- Other extra styles specific to the libraries used are located inside `src/assets`.
-- The `src/utils` directory contains generic Chart.js utilities.
-
-<br />
-
-### Available Scripts
-
-### `npm start`
-
-Runs the app in the development mode.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The heath focussed features are as follows:-
+- Integrating the app with a smart-watch and display a sleep cycle(sleeping hours while working on each project) 
+- Sending timely notifications reminding the person of lunch time,sleep time etc.
 
 
-<br />
+## 🎥 Progress so far <a name = "progress_so_far"></a>
 
-### 🌟 Pro Version
+- The first umbrella which is the TO-DO app has been implemented successfully.
+- Under the events' umbrella, all the features have been implemented on the dashboard.
+- Integrating the app with Google API could not succeed due to authentication issues when sending a GET request to fetch the events, although the POST request works fine.
+- So, rather, I have used dummy data and implemented the logic behind the pie chart for the productivity analysis.
+- Sleep cycles would need data from smartwatches which would need authorization from the manufacturers, so I have rather used dummy data
 
-If you're looking for something more, check out [Shards Dashboard Pro React](https://designrevision.com/downloads/shards-dashboard-pro-react/) which features many more custom templates and components. Use the `GITHUB15` coupon code for a **15% discount off the current price**.
+## 💭 How it works <a name = "working"></a>
 
-<br />
+- The TO-DO app uses state managament in REACT to retain the data for the tasks.
+- The Google Calendar API sends a GET request to fetch all the scheduled events on the user's calendar and sends to the frontend to be displayed in the form of table
+- The start and end timings of meetings are used to calculate the productive hours which is displayed in the pie chart as a percentage of the total working hours.
+- The sleeping hours for each project are displayed in the form of bar graph.
 
-### Built using
+## ⛏️ Built Using <a name = "built_using"></a>
+This app has been built using the MERN stack and a little bit of Flux for the front-end.
 
-- [Shards React](https://github.com/designrevision/shards-react)
-- [Chart.js](https://www.chartjs.org/)
-- [Flux](https://facebook.github.io/flux/)
-- [No UI Slider](https://refreshless.com/nouislider/)
-- [React Datepicker](https://www.npmjs.com/package/react-datepicker)
-- [Quill](https://quilljs.com/)
+## 🎈 Sample dashboard <a name = "sample_dashboard"></a>
+<h3>The dashboard displaying the bar chart for sleep cycle and pie chart for productivity</h3>
 
-<br />
+![dashboard](https://github.com/muskanapp/Personal-Assistant-for-busiest-professionals/blob/main/assets/Screenshot_1.png)
 
-### Changelog
+<h3>The to-do app</h3>
 
-Please check out the [CHANGELOG](CHANGELOG.md).
+![to-do](https://github.com/muskanapp/Personal-Assistant-for-busiest-professionals/blob/main/assets/Screenshot%20(47).png)
+
+<h3>The table of events</h3>
+
+![table](https://github.com/muskanapp/Personal-Assistant-for-busiest-professionals/blob/main/assets/Screenshot_56.png)
+
+## 🔳 Architecture <a name="architecture"></a>
+
+![architecture](https://github.com/muskanapp/Personal-Assistant-for-busiest-professionals/blob/main/assets/Architecture.png)
+
+## ⛏️ Debugging and Maintanence <a name="debugging_and_maintanence"></a>
+- The integration with Google Calendars API needs to be worked upon.
+
+##   Performance and Scalability <a name="performance_and_scalability"></a>
+
+
+## 🤓 Future Work
+- Notifications can be sent to the user reminding them of timely meals and breaks
+- Integration of the web app with smart-watch can be a large scale future work which would need authorization from the side of manufacturers
+- A small feature in the to-do app to set the priority of tasks (low,medium,high)
+- A voice assistant service which works to play music, read out the news etc.\
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@muskanapp](https://github.com/muskanapp) - Idea & Initial work
+
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
