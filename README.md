@@ -1,7 +1,7 @@
 <h1 align="center">Personal Assistant for Busiest Professionals</h1>
 
 <p align="center">
-  <img src="https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Screenshot_1.png" />
+  <img src="https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/download.png" />
 </p>
 
 ## 📝 Table of Contents
@@ -59,19 +59,19 @@ This app has been built using the MERN stack and a little bit of Flux for the fr
 ## 🎈 Sample dashboard <a name = "sample_dashboard"></a>
 <h3>The dashboard displaying the bar chart for sleep cycle and pie chart for productivity</h3>
 
-![dashboard](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/main/assets/Screenshot_1.png)
+![dashboard](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Screenshot_1.png)
 
 <h3>The to-do app</h3>
 
-![to-do](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/main/assets/Screenshot%20(47).png)
+![to-do](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Screenshot%20(47).png)
 
 <h3>The table of events</h3>
 
-![table](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/main/assets/Screenshot_56.png)
+![table](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Screenshot_56.png)
 
 ## 🔳 Architecture <a name="architecture"></a>
 
-![architecture](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/main/assets/Architecture.png)
+![architecture](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/Architecture.png)
 
 ## ⛏️ Debugging and Maintanence <a name="debugging_and_maintanence"></a>
 - The integration with Google Calendars API needs to be worked upon.
