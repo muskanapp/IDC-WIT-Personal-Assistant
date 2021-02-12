@@ -50,6 +50,8 @@ The heath focussed features are as follows:-
 
 ## 🧢 Demo/Working Model <a name="demo"></a>
 
+![demo gif](https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/app_demo.gif)
+
 The link to the deployed webapp-[personal-assistant](https://personal-assistant-muskanpa.netlify.app/)
 ## 💭 How it works <a name = "working"></a>
 
