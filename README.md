@@ -61,7 +61,7 @@ The link to the deployed webapp-[personal-assistant](https://personal-assistant-
 - The sleeping hours for each project are displayed in the form of bar graph.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-This app has been built using the MERN stack and a little bit of Flux for the front-end.
+This app has been built using the MERN stack, mostly REACT and a little bit of Flux for the front-end.
 
 ## 🎈 Sample dashboard <a name = "sample_dashboard"></a>
 <h3>The dashboard displaying the bar chart for sleep cycle and pie chart for productivity</h3>
