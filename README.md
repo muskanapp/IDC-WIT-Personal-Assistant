@@ -1,5 +1,7 @@
 <h1 align="center">Personal Assistant for Busiest Professionals</h1>
 
+<h3 align="center"><a href="https://www.youtube.com/watch?v=hRtJoRkALaU&t=0s">YOUTUBE LINK FOR THE PITCH</a></h3>
+
 <p align="center">
   <img src="https://github.com/muskanapp/IDC-WIT-Personal-Assistant/blob/master/assets/download.png" />
 </p>
