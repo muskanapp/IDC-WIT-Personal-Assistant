@@ -82,6 +82,7 @@ This app has been built using the MERN stack and a little bit of Flux for the fr
 
 ## ⛏️ Debugging and Maintanence <a name="debugging_and_maintanence"></a>
 - The data used in pie-chart is dummy data but given more time, the data fetched using the Google Calendar API can be used.
+- Currently, the app asks the user to grant permission every time one clicks on Tables tab.
 
 ##   Performance and Scalability <a name="performance_and_scalability"></a>
 - The site works on all the web browsers.
